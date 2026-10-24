@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Trámites y gestiones | Municipalidad de El Monte</title>
+    
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="assets/logos/Municipalidad.ElMonte.svg">
+
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Hoja de estilos compartida -->
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body class="tramites-page responsive-nav-page">
+
+    <!-- =========================================
+         ACCESIBILIDAD
+    ========================================== -->
+
+    <aside
+        class="accessibility-widget"
+        aria-label="Herramientas de accesibilidad">
+
+
+        <button
+            type="button"
+            class="accessibility-toggle"
+            id="accessibility-toggle"
+            aria-label="Abrir herramientas de accesibilidad"
+            aria-expanded="false"
+            aria-controls="accessibility-panel">
+
+            <span aria-hidden="true">♿</span>
+
+        </button>
+
+
+        <div
+            class="accessibility-panel"
+            id="accessibility-panel"
+            hidden>
+
+
+            <div class="accessibility-panel-header">
+
+                <span>
+                    Accesibilidad
+                </span>
+
+
+                <button
+                    type="button"
+                    class="accessibility-close"
+                    id="accessibility-close"
+                    aria-label="Cerrar herramientas de accesibilidad">
+
+                    ×
+
+                </button>
+
+            </div>
+
+
+            <div class="accessibility-controls">
+
+
+                <div class="accessibility-control-group">
+
+                    <span class="accessibility-control-label">
+                        Tamaño del texto
+                    </span>
+
+
+                    <div class="accessibility-text-buttons">
+
+                        <button
+                            type="button"
+                            class="accessibility-action"
+                            id="font-decrease"
+                            aria-label="Disminuir tamaño del texto">
+                            A−
+                        </button>
+
+                        <button
+                            type="button"
+                            class="accessibility-action"
+                            id="font-reset"
+                            aria-label="Restablecer tamaño del texto">
+                            A
+                        </button>
+
+                        <button
+                            type="button"
+                            class="accessibility-action"
+                            id="font-increase"
+                            aria-label="Aumentar tamaño del texto">
+                            A+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="accessibility-option"
+                    id="contrast-toggle"
+                    aria-pressed="false">
+
+                    <span aria-hidden="true">◐</span>
+
+                    Alto contraste
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="accessibility-option"
+                    id="links-toggle"
+                    aria-pressed="false">
+
+                    <span aria-hidden="true">Aa</span>
+
+                    Subrayar enlaces
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="accessibility-reset"
+                    id="accessibility-reset">
+
+                    Restablecer ajustes
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- =========================================
+         BARRA SUPERIOR
+    ========================================== -->
+
+    <div class="utility-bar">
+
+        <div class="utility-bar-inner">
+
+            <!-- Redes sociales -->
+            <div
+                class="social-links"
+                aria-label="Redes sociales municipales">
+
+                <!-- Facebook -->
+                <a
+                    href="https://www.facebook.com/MuniElMonte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook de la Municipalidad de El Monte">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true">
+
+                        <path
+                            d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1z"/>
+
+                    </svg>
+
+                </a>
+
+                <!-- Instagram -->
+                <a
+                    href="https://www.instagram.com/muni_elmonte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram de la Municipalidad de El Monte">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true">
+
+                        <rect
+                            x="3"
+                            y="3"
+                            width="18"
+                            height="18"
+                            rx="5"/>
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="4"/>
+
+                        <circle
+                            cx="17.5"
+                            cy="6.5"
+                            r="1"/>
+
+                    </svg>
+
+                </a>
+
+                <!-- X / Twitter -->
+                <a
+                    href="https://x.com/munielmonte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="X de la Municipalidad de El Monte">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true">
+
+                        <path
+                            d="M5 4l5.5 7.3L5.3 20H8l3.8-6.2L16.5 20H20l-6.2-8.2L18.5 4h-2.7l-3.3 5.3L8.5 4z"/>
+
+                    </svg>
+
+                </a>
+
+                <!-- YouTube -->
+                <a
+                    href="https://www.youtube.com/@MunicipalidadDeElMonte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube de la Municipalidad de El Monte">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true">
+
+                        <path
+                            d="M21 7.5a3 3 0 0 0-2.1-2.1C17.1 5 12 5 12 5s-5.1 0-6.9.4A3 3 0 0 0 3 7.5C2.6 9.3 2.6 12 2.6 12s0 2.7.4 4.5a3 3 0 0 0 2.1 2.1c1.8.4 6.9.4 6.9.4s5.1 0 6.9-.4a3 3 0 0 0 2.1-2.1c.4-1.8.4-4.5.4-4.5s0-2.7-.4-4.5z"/>
+
+                        <path
+                            class="social-play"
+                            d="M10 9l5 3-5 3z"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+            <!-- Accesos de transparencia -->
+            <nav class="utility-links" aria-label="Accesos de transparencia">
+
+                <a
+                    href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU084"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span>Transparencia Activa</span>
+                    <small>Ley de Transparencia</small>
+
+                </a>
+
+
+                <a
+                    href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=f3c0e3bf2ba13ee6ce7f537f50f5d09c"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span>Solicitar Información</span>
+                    <small>Ley de Transparencia</small>
+
+                </a>
+
+
+                <a
+                    href="https://www.leylobby.gob.cl/solicitud/audiencia/492"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <span>Plataforma</span>
+                    <small>Ley de Lobby</small>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+
+            <div class="logo">
+
+                <a href="index.html">
+
+                    <img
+                        src="assets/logos/Municipalidad.ElMonte.svg"
+                        alt="Logo Municipalidad El Monte"
+                        class="main-logo">
+
+                </a>
+                
+            </div>
+
+
+            <button
+                type="button"
+                class="mobile-menu-toggle"
+                id="mobile-menu-toggle"
+                aria-label="Abrir menú principal"
+                aria-expanded="false"
+                aria-controls="mobile-menu-panel">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <div
+                class="header-right"
+                id="mobile-menu-panel">
+                <nav
+                    class="main-nav"
+                    aria-label="Navegación principal">
+
+                    <ul>
+
+
+                        <li>
+
+                            <a href="index.html">
+                                Inicio
+                            </a>
+
+                        </li>
+
+
+                        <!-- Trámites -->
+                        <li class="nav-item-has-submenu">
+
+                            <a
+                                href="tramites.html"
+                                class="active">
+
+                                Trámites
+
+                                <span
+                                    class="nav-arrow"
+                                    aria-hidden="true">
+                                    ▼
+                                </span>
+
+                            </a>
+
+
+                            <ul class="submenu">
+
+                                <li>
+                                    <a href="tramites.html">
+                                        Todos los trámites
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="portal-pagos.html">
+                                        Portal de pagos
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="documentos-permisos.html">
+                                        Documentos, certificados y permisos
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="concursos-publicos.html">
+                                        Concursos públicos
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Municipalidad -->
+                        <li class="nav-item-has-submenu">
+
+                            <a href="municipalidad.html">
+
+                                Municipalidad
+
+                                <span
+                                    class="nav-arrow"
+                                    aria-hidden="true">
+                                    ▼
+                                </span>
+
+                            </a>
+
+
+                            <ul class="submenu">
+
+                                <li>
+                                    <a href="municipalidad.html">
+                                        Nuestra Municipalidad
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="alcaldia.html">
+                                        Alcaldía
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="concejo-municipal.html">
+                                        Concejo Municipal
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="municipalidad.html#direcciones">
+                                        Direcciones municipales
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Transparencia -->
+                        <li class="nav-item-has-submenu">
+
+                            <a
+                                href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU084"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                Transparencia
+
+                                <span
+                                    class="nav-arrow"
+                                    aria-hidden="true">
+                                    ▼
+                                </span>
+
+                            </a>
+
+
+                            <ul class="submenu">
+
+                                <li>
+                                    <a
+                                        href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU084"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+
+                                        Transparencia Activa
+
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a
+                                        href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=f3c0e3bf2ba13ee6ce7f537f50f5d09c"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+
+                                        Solicitar información
+
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a
+                                        href="https://www.leylobby.gob.cl/solicitud/audiencia/492"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        Ley de Lobby
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Noticias -->
+                        <li class="nav-item-has-submenu">
+
+                            <a href="noticias.html">
+
+                                Noticias
+
+                                <span
+                                    class="nav-arrow"
+                                    aria-hidden="true">
+                                    ▼
+                                </span>
+
+                            </a>
+
+
+                            <ul class="submenu">
+
+                                                                <li>
+                                    <a href="noticias.html">
+                                        Inicio de noticias
+                                    </a>
+                                </li>
+
+<li>
+                                    <a href="noticias.html?panel=todas">
+                                        Todas las noticias
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="agenda-comunal.html">
+                                        Agenda comunal
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="comunicados.html">
+                                        Comunicados
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- Contactos -->
+                        <li>
+
+                            <a href="contactos.html">
+                                Contactos
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+
+
+                <a
+                    href="tel:+56952171399"
+                    class="emergency-btn">
+
+                    <span>
+                        Emergencia Municipal
+                    </span>
+
+                    <strong>
+                        +56 9 5217 1399
+                    </strong>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- =========================================
+         CONTENIDO
+    ========================================== -->
+
+    <main>
+
+        <!-- =========================================
+             HERO INTERNO
+        ========================================== -->
+
+        <section class="main-page-hero">
+
+            <div class="container main-page-hero-content">
+
+                <span class="section-kicker-accent">
+                    ATENCIÓN CIUDADANA
+                </span>
+
+                <h1>
+                    Trámites y gestiones municipales
+                </h1>
+
+                <p>
+                    Encuentra rápidamente el tipo de gestión que necesitas
+                    y accede a la información correspondiente.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             CATEGORÍAS DE TRÁMITES
+        ========================================== -->
+
+        <section class="tramites-directory">
+
+            <div class="container">
+
+
+                <div class="tramites-directory-grid">
+
+
+                    <!-- Portal de pagos -->
+                    <a
+                        href="portal-pagos.html"
+                        class="tramites-directory-card tramites-directory-payments">
+
+                        <span class="tramites-directory-number">
+                            01
+                        </span>
+
+                        <span class="card-kicker">
+                            SERVICIOS EN LÍNEA
+                        </span>
+
+                        <h2>
+                            Portal de pagos
+                        </h2>
+
+                        <p>
+                            Realiza pagos y revisa obligaciones
+                            municipales desde un único lugar.
+                        </p>
+
+                        <span class="tramites-directory-action">
+                            Ir al portal →
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- Documentos y permisos -->
+                    <a
+                        href="documentos-permisos.html"
+                        class="tramites-directory-card tramites-directory-documents">
+
+                        <span class="tramites-directory-number">
+                            02
+                        </span>
+
+                        <span class="card-kicker">
+                            SOLICITUDES Y AUTORIZACIONES
+                        </span>
+
+                        <h2>
+                            Documentos, certificados y permisos
+                        </h2>
+
+                        <p>
+                            Revisa solicitudes, certificados,
+                            permisos y patentes municipales.
+                        </p>
+
+                        <span class="tramites-directory-action">
+                            Ver gestiones →
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- Concursos -->
+                    <a
+                        href="concursos-publicos.html"
+                        class="tramites-directory-card tramites-directory-contests">
+
+                        <span class="tramites-directory-number">
+                            03
+                        </span>
+
+                        <span class="card-kicker">
+                            CONVOCATORIAS
+                        </span>
+
+                        <h2>
+                            Concursos públicos
+                        </h2>
+
+                        <p>
+                            Consulta convocatorias, procesos abiertos,
+                            bases y fechas importantes.
+                        </p>
+
+                        <span class="tramites-directory-action">
+                            Ver concursos →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             ORIENTACIÓN
+        ========================================== -->
+
+        <section class="tramites-help">
+
+            <div class="container tramites-help-content">
+
+
+                <div>
+
+                    <span class="section-kicker">
+                        ORIENTACIÓN
+                    </span>
+
+                    <h2>
+                        ¿No sabes dónde comenzar?
+                    </h2>
+
+                    <p>
+                        Si no encuentras la gestión que buscas,
+                        puedes revisar nuestros canales de atención.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="contactos.html"
+                    class="btn btn-primary">
+
+                    Contactar al municipio
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+
+            <div class="footer-brand">
+
+                <h5>
+                    Ilustre Municipalidad de El Monte
+                </h5>
+
+                <p class="footer-address">
+                    Avenida Los Libertadores 277, Santiago
+                </p>
+
+                <p class="footer-copy">
+                    © 2026 El Monte, Chile. Todos los derechos reservados.
+                </p>
+
+            </div>
+
+
+            <nav
+                class="footer-nav"
+                aria-label="Navegación del pie de página">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Volver al inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU084"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            Portal de Transparencia
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contactos.html">
+                            Contacto y Oficinas
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript compartido -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
