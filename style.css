@@ -163,7 +163,6 @@ a {
 .social-links {
     display: flex;
     align-items: center;
-
     gap: 10px;
 }
 
@@ -185,14 +184,12 @@ a {
 .social-links a:hover {
     background-color: rgba(255, 255, 255, 0.12);
     border-color: var(--color-white);
-
     transform: translateY(-2px);
 }
 
 .social-links svg {
     width: 18px;
     height: 18px;
-
     fill: currentColor;
 }
 
@@ -216,20 +213,14 @@ a {
 
 .utility-links a {
     min-width: 190px;
-
     padding: 8px 20px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     color: var(--color-white);
-
     border-left: 1px solid rgba(255, 255, 255, 0.16);
-
     text-align: center;
-
     transition: background-color 0.2s ease;
 }
 
@@ -239,17 +230,14 @@ a {
 
 .utility-links span {
     color: var(--color-accent);
-
     font-size: 0.72rem;
     font-weight: 700;
-
     text-transform: uppercase;
     letter-spacing: 0.04em;
 }
 
 .utility-links small {
     color: var(--color-white);
-
     font-size: 0.72rem;
     font-weight: 600;
 }
@@ -267,29 +255,20 @@ a {
     box-shadow: var(--shadow-sm);
 }
 
-/*
-   IMPORTANTE:
-   esta cabecera NO usa el límite de 1200px
-   del contenido de las páginas.
-*/
 .header-container {
     width: 100%;
     max-width: 1480px;
-
     margin: 0 auto;
     padding: 0 32px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 32px;
 }
 
 /* Logo */
 .logo {
     flex-shrink: 0;
-
     display: flex;
     align-items: center;
 }
@@ -297,23 +276,18 @@ a {
 .main-logo {
     width: auto;
     height: auto;
-
     max-width: 220px;
     max-height: 80px;
-
     object-fit: contain;
-
     display: block;
 }
 
 /* Navegación + emergencia */
 .header-right {
     flex: 1;
-
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
     gap: 28px;
 }
 
@@ -324,12 +298,9 @@ a {
 .main-nav > ul {
     display: flex;
     align-items: center;
-
     gap: 25px;
-
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
@@ -338,16 +309,11 @@ a {
 .main-nav > ul > li > a {
     display: flex;
     align-items: center;
-
     gap: 5px;
-
     padding: 20px 0;
-
     color: var(--color-text);
-
     font-size: 0.93rem;
     font-weight: 600;
-
     white-space: nowrap;
 }
 
@@ -357,9 +323,7 @@ a {
 .nav-arrow {
     position: relative;
     top: -1px;
-
     font-size: 0.8rem;
-
     transition: transform 0.2s ease;
 }
 
@@ -372,32 +336,20 @@ a {
 
 .submenu {
     position: absolute;
-
     top: calc(100% - 4px);
     left: -18px;
-
     z-index: 100;
-
     min-width: 235px;
-
     padding: 8px;
-
     background-color: var(--color-white);
-
     border: 1px solid #e3e8ed;
     border-radius: 8px;
-
     box-shadow: 0 12px 30px rgba(23, 49, 82, 0.15);
-
     list-style: none;
-
     opacity: 0;
     visibility: hidden;
-
     transform: translateY(8px);
-
     pointer-events: none;
-
     transition:
         opacity 0.18s ease,
         transform 0.18s ease,
@@ -408,9 +360,7 @@ a {
 .nav-item-has-submenu:focus-within > .submenu {
     opacity: 1;
     visibility: visible;
-
     transform: translateY(0);
-
     pointer-events: auto;
 }
 
@@ -418,18 +368,12 @@ a {
 
 .submenu a {
     width: 100%;
-
     display: block;
-
     padding: 11px 13px;
-
     color: var(--color-text);
-
     border-radius: 5px;
-
     font-size: 0.82rem;
     font-weight: 500;
-
     white-space: nowrap;
 }
 
@@ -444,25 +388,17 @@ a {
 
 .emergency-btn {
     min-width: 230px;
-
     padding: 12px 20px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     flex-shrink: 0;
-
     background-color: var(--color-accent);
     color: var(--color-primary-dark);
-
     border-radius: var(--border-radius);
-
     text-align: center;
-
     line-height: 1.25;
-
     transition:
         background-color 0.2s ease,
         transform 0.2s ease;
@@ -470,7 +406,6 @@ a {
 
 .emergency-btn:hover {
     background-color: var(--color-accent-hover);
-
     transform: translateY(-2px);
 }
 
@@ -481,7 +416,6 @@ a {
 
 .emergency-btn strong {
     margin-top: 2px;
-
     font-size: 1rem;
     font-weight: 700;
 }
@@ -493,17 +427,6 @@ a {
     position: relative;
     width: 100%;
     background-color: var(--color-bg-light);
-/* =========================================
-============================================
-============================================
-============================================
-
-            EDICIÓN NUEVA - CIAN
-
-============================================
-============================================
-============================================
-   ========================================= */
     z-index: 20;
 }
 
@@ -513,17 +436,6 @@ a {
     width: 100%;
     overflow-x: clip;
 }
-/* =========================================
-============================================
-============================================
-============================================
-
-        TERMINO DE EDICIÓN NUEVA - CIAN
-
-============================================
-============================================
-============================================
-   ========================================= */
 
 .carousel-track {
     position: relative;
@@ -926,12 +838,8 @@ a {
 
 .help-emergency-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 48px;
-
     align-items: stretch;
 }
 
@@ -946,19 +854,15 @@ a {
 
 .support-panel-title {
     margin-bottom: 10px;
-
     font-family: var(--font-heading);
     font-size: 2rem;
     line-height: 1.2;
-
     color: var(--color-primary-dark);
 }
 
 .support-panel-description {
     margin-bottom: 28px;
-
     color: var(--color-text-muted);
-
     font-size: 0.92rem;
     line-height: 1.6;
 }
@@ -971,7 +875,6 @@ a {
 
 .faq-panel .accordion {
     display: grid;
-
     gap: 12px;
 }
 
@@ -981,7 +884,6 @@ a {
    para que funcione mejor en la nueva columna */
 .faq-panel .accordion-header {
     padding: 20px 22px;
-
     font-size: 0.92rem;
 }
 
@@ -995,28 +897,21 @@ a {
 .emergency-panel {
     display: flex;
     flex-direction: column;
-
     background-color: transparent;
-
     border-top: none;
 }
 
 .emergency-contact-list {
     display: grid;
-
     gap: 12px;
 }
 
 .emergency-contact {
     display: flex;
     align-items: center;
-
     gap: 16px;
-
     padding: 15px 16px;
-
     background-color: var(--color-white);
-
     border: 1px solid #eee6d8;
     border-radius: 9px;
 }
@@ -1024,35 +919,26 @@ a {
 .emergency-contact-icon {
     width: 42px;
     height: 42px;
-
     flex: 0 0 42px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     background-color: #fff0c2;
-
     color: var(--color-red);
-
     font-size: 1.15rem;
     font-weight: 700;
 }
 
 .emergency-contact-info {
     min-width: 0;
-
     display: flex;
     flex-direction: column;
-
     gap: 2px;
 }
 
 .emergency-contact-name {
     color: var(--color-primary-dark);
-
     font-family: var(--font-heading);
     font-size: 0.95rem;
     font-weight: 700;
@@ -1061,7 +947,6 @@ a {
 .emergency-contact-info > a,
 .emergency-phone-group a {
     color: var(--color-primary);
-
     font-size: 1.05rem;
     font-weight: 700;
 }
@@ -1077,21 +962,16 @@ a {
 .emergency-phone-group {
     display: flex;
     align-items: center;
-
     gap: 7px;
-
     flex-wrap: wrap;
 }
 
 /* Enlace final */
 .emergency-all-link {
     display: inline-block;
-
     margin-top: auto;
     padding-top: 22px;
-
     color: var(--color-primary);
-
     font-size: 0.82rem;
     font-weight: 700;
 }
@@ -1279,7 +1159,6 @@ a {
     .header-container {
         padding-left: 24px;
         padding-right: 24px;
-
         gap: 22px;
     }
 
@@ -1298,10 +1177,8 @@ a {
 
     .utility-bar-inner {
         flex-direction: column;
-
         padding-top: 10px;
         padding-bottom: 10px;
-
         gap: 10px;
     }
 
@@ -1309,21 +1186,17 @@ a {
 
     .utility-links {
         width: 100%;
-
         justify-content: center;
-
         flex-wrap: wrap;
     }
 
     .utility-links a {
         flex: 1;
-
         min-width: 180px;
     }
 
     .header-container {
         flex-direction: column;
-
         padding-top: 8px;
         padding-bottom: 8px;
     }
@@ -1336,9 +1209,7 @@ a {
 
     .main-nav > ul {
         justify-content: center;
-
         flex-wrap: wrap;
-
         gap: 0 22px;
     }
 
@@ -1384,10 +1255,7 @@ a {
 
     .submenu {
         left: 50%;
-
-        transform:
-            translate(-50%, 8px);
-
+        transform: translate(-50%, 8px);
         min-width: min(280px, calc(100vw - 32px));
     }
 
@@ -1474,19 +1342,13 @@ a {
 .service-link-card {
     min-width: 0;
     min-height: 135px;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     padding: 20px 22px;
-
     border-radius: 10px;
-
     color: var(--color-text);
-
     box-shadow: var(--shadow-sm);
-
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
@@ -1550,14 +1412,10 @@ a {
 
 .post-hero-layout {
     display: grid;
-
-    /* Misma proporción utilizada en noticias.html */
     grid-template-columns:
         minmax(0, 2fr)
         minmax(280px, 1fr);
-
     gap: 40px;
-
     align-items: start;
 }
 
@@ -1566,13 +1424,9 @@ a {
 
 .main-content-column > section {width: 100%;}
 
-/* Los .container internos ya no necesitan
-   volver a limitar el ancho ni agregar
-   un segundo margen horizontal */
 .main-content-column > section > .container {
     width: 100%;
     max-width: none;
-
     padding-left: 0;
     padding-right: 0;
 }
@@ -1583,12 +1437,9 @@ a {
 
 .service-sidebar {
     min-width: 0;
-
     padding-top: var(--spacing-xl);
     padding-bottom: var(--spacing-xl);
-
     padding-left: 0;
-
     border-left: none;
 }
 
@@ -1597,7 +1448,6 @@ a {
 .sidebar-sticky {
     position: sticky;
     top: 24px;
-
     display: grid;
     gap: 24px;
 }
@@ -1608,11 +1458,8 @@ a {
 
 .sidebar-card {
     background-color: var(--color-white);
-
     padding: 28px;
-
     border-radius: 12px;
-
     box-shadow: var(--shadow-sm);
 }
 
@@ -1621,23 +1468,19 @@ a {
 .sidebar-card-title {
     font-size: 1.55rem;
     line-height: 1.25;
-
     margin-bottom: 12px;
 }
 
 .sidebar-card-description {
     color: var(--color-text-muted);
-
     font-size: 0.88rem;
     line-height: 1.6;
-
     margin-bottom: 20px;
 }
 
 /* Botones de ambas tarjetas */
 .sidebar-btn {
     width: 100%;
-
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -1654,32 +1497,24 @@ a {
 .sidebar-form-group {
     display: flex;
     flex-direction: column;
-
     gap: 7px;
 }
 
 .sidebar-form-group label {
     color: var(--color-primary-dark);
-
     font-size: 0.8rem;
     font-weight: 700;
 }
 
 .sidebar-form-group input {
     width: 100%;
-
     padding: 12px 13px;
-
     border: 1px solid #d1d9e0;
     border-radius: 6px;
-
     background-color: #f9fbfc;
-
     color: var(--color-text);
-
     font-family: var(--font-body);
     font-size: 0.88rem;
-
     transition:
         border-color 0.2s ease,
         background-color 0.2s ease,
@@ -1688,22 +1523,15 @@ a {
 
 .sidebar-form-group input:focus {
     outline: none;
-
     border-color: var(--color-primary);
-
     background-color: var(--color-white);
-
-    box-shadow:
-        0 0 0 3px rgba(35, 73, 124, 0.12);
+    box-shadow: 0 0 0 3px rgba(35, 73, 124, 0.12);
 }
 
 .employee-login-status {
     min-height: 1.4em;
-
     margin: 0;
-
     color: var(--color-text-muted);
-
     font-size: 0.72rem;
     line-height: 1.45;
 }
@@ -1796,12 +1624,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 14px 16px;
-
     background-color: var(--color-primary-dark);
     color: var(--color-white);
-
     font-weight: 700;
     font-size: 0.95rem;
 }
@@ -1810,16 +1635,12 @@ a {
 .accessibility-close {
     width: 32px;
     height: 32px;
-
     border: none;
     border-radius: 50%;
-
     background: transparent;
     color: var(--color-white);
-
     font-size: 1.5rem;
     line-height: 1;
-
     cursor: pointer;
 }
 
@@ -1844,9 +1665,7 @@ a {
 .accessibility-control-label {
     font-size: 0.8rem;
     font-weight: 700;
-
     color: var(--color-primary-dark);
-
     text-transform: uppercase;
     letter-spacing: 0.04em;
 }
@@ -1860,19 +1679,14 @@ a {
 
 .accessibility-action {
     padding: 9px 6px;
-
     border: 1px solid #d1d9e0;
     border-radius: 6px;
-
     background-color: #f8fafc;
     color: var(--color-primary-dark);
-
     font-family: var(--font-body);
     font-weight: 700;
     font-size: 0.9rem;
-
     cursor: pointer;
-
     transition:
         background-color 0.2s ease,
         border-color 0.2s ease;
@@ -1886,27 +1700,19 @@ a {
 /* Botones de opción */
 .accessibility-option {
     width: 100%;
-
     display: flex;
     align-items: center;
     gap: 10px;
-
     padding: 11px 12px;
-
     border: 1px solid #d1d9e0;
     border-radius: 6px;
-
     background-color: var(--color-white);
     color: var(--color-primary-dark);
-
     font-family: var(--font-body);
     font-size: 0.85rem;
     font-weight: 600;
-
     cursor: pointer;
-
     text-align: left;
-
     transition:
         background-color 0.2s ease,
         color 0.2s ease,
@@ -1927,19 +1733,14 @@ a {
 /* Botón restablecer */
 .accessibility-reset {
     margin-top: 4px;
-
     padding: 10px;
-
     border: none;
     border-radius: 6px;
-
     background-color: transparent;
     color: var(--color-red);
-
     font-family: var(--font-body);
     font-size: 0.78rem;
     font-weight: 700;
-
     cursor: pointer;
 }
 
@@ -1952,17 +1753,6 @@ a {
     outline-offset: 2px;
 }
 
-/* =========================================
-============================================
-============================================
-============================================
-
-            EDICIÓN NUEVA - CIAN
-
-============================================
-============================================
-============================================
-   ========================================= */
 /* Estados activos y límites de los botones de tamaño de texto (5 niveles) */
 .accessibility-action.is-active {
     background-color: var(--color-primary);
@@ -1982,17 +1772,9 @@ body.accessibility-contrast .accessibility-action.is-active {
 }
 
 /* Mantener proporciones fijas del panel de accesibilidad para que no se deforme al escalar fuentes */
-.accessibility-toggle {
-    font-size: 25px;
-}
-
-.accessibility-panel-header {
-    font-size: 15px;
-}
-
-.accessibility-close {
-    font-size: 24px;
-}
+.accessibility-toggle {font-size: 25px;}
+.accessibility-panel-header {font-size: 15px;}
+.accessibility-close {font-size: 24px;}
 
 .accessibility-control-label {
     font-size: 12.8px;
@@ -2018,38 +1800,18 @@ body.accessibility-contrast .accessibility-scale-badge {
     border: 1px solid #ffffff;
 }
 
-.accessibility-action {
-    font-size: 14.4px;
-}
+.accessibility-action {font-size: 14.4px;}
 
-.accessibility-option {
-    font-size: 13.6px;
-}
+.accessibility-option {font-size: 13.6px;}
 
-.accessibility-reset {
-    font-size: 12.5px;
-}
+.accessibility-reset {font-size: 12.5px;}
 
-/* Resguardo de contenedores para que las jerarquías no colapsen en los niveles grandes */
 .carousel-container {
     min-height: 500px;
     height: clamp(500px, 31.5rem, 600px);
 }
 
-.main-nav > ul {
-    gap: clamp(14px, 1.5vw, 25px);
-}
-/* =========================================
-============================================
-============================================
-============================================
-
-        TERMINO DE EDICIÓN NUEVA - CIAN
-
-============================================
-============================================
-============================================
-   ========================================= */
+.main-nav > ul {gap: clamp(14px, 1.5vw, 25px);}
 
 /* =========================================
    SUBRAYAR ENLACES
@@ -2279,7 +2041,6 @@ body.accessibility-contrast select,
 body.accessibility-contrast textarea {
     background-color: #000000 !important;
     color: #ffffff !important;
-
     border: 2px solid #ffffff !important;
 }
 
@@ -2292,7 +2053,6 @@ body.accessibility-contrast .carousel-button,
 body.accessibility-contrast .accessibility-toggle {
     background-color: #ffeb3b !important;
     color: #000000 !important;
-
     border: 2px solid #ffffff !important;
 }
 
@@ -2301,7 +2061,6 @@ body.accessibility-contrast .accessibility-action,
 body.accessibility-contrast .accessibility-option {
     background-color: #000000;
     color: #ffffff;
-
     border: 2px solid #ffffff;
 }
 
@@ -2316,16 +2075,13 @@ body.accessibility-contrast .accessibility-reset {color: #ffeb3b;}
 body.accessibility-contrast .utility-bar,
 body.accessibility-contrast .submenu {
     background-color: #000000 !important;
-
     color: #ffffff !important;
-
     border-color: #ffffff !important;
 }
 
 body.accessibility-contrast .emergency-btn {
     background-color: #ffeb3b !important;
     color: #000000 !important;
-
     border: 2px solid #ffffff !important;
 }
 
@@ -2338,11 +2094,8 @@ body.accessibility-contrast .submenu a:hover {
 
 body.accessibility-contrast .service-link-card {
     background-color: #000000 !important;
-
     color: #ffffff !important;
-
     border: 2px solid #ffffff !important;
-
     box-shadow: none !important;
 }
 
@@ -2386,10 +2139,8 @@ body.accessibility-contrast .emergency-all-link {color: #ffeb3b !important;}
     .accessibility-widget {
         top: auto;
         left: auto;
-
         right: 16px;
         bottom: 16px;
-
         transform: none;
     }
 
@@ -2397,7 +2148,6 @@ body.accessibility-contrast .emergency-all-link {color: #ffeb3b !important;}
     .accessibility-toggle {
         width: 52px;
         height: 52px;
-
         border-radius: 10px;
     }
 
@@ -2409,12 +2159,9 @@ body.accessibility-contrast .emergency-all-link {color: #ffeb3b !important;}
 
     .accessibility-panel {
         position: absolute;
-
         right: 0;
         left: auto;
-
         bottom: 64px;
-
         width: calc(100vw - 32px);
         max-width: 320px;
     }
@@ -2428,9 +2175,7 @@ body.accessibility-contrast .emergency-all-link {color: #ffeb3b !important;}
 body.accessibility-contrast .sidebar-card {
     background-color: #000000 !important;
     color: #ffffff !important;
-
     border-color: #ffffff !important;
-
     box-shadow: none !important;
 }
 
@@ -2798,10 +2543,7 @@ body.accessibility-contrast .payments-step-number {
 
 .home-news-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 }
 
@@ -2812,11 +2554,8 @@ body.accessibility-contrast .payments-step-number {
 
 .home-news-link {
     display: inline-block;
-
     margin-top: 18px;
-
     color: var(--color-primary);
-
     font-size: 0.8rem;
     font-weight: 700;
 }
@@ -2906,8 +2645,6 @@ body.accessibility-contrast .payments-step-number {
     overflow: hidden;
 }
 
-
-
 /* =========================================
    SISTEMA DE PESTAÑAS (NOTICIAS INTERNAS)
 ========================================= */
@@ -2958,7 +2695,6 @@ body.accessibility-contrast .payments-step-number {
     border-radius: 12px;
     box-shadow: var(--shadow-sm);
 }
-
 
 /* =========================================
    CONTACTOS - COMPONENTES SIN ESTILOS INLINE
@@ -3100,9 +2836,7 @@ body.accessibility-contrast .payments-step-number {
 }
 
 .page-contactos .contact-item-label,
-.page-contactos .contact-item-label-strong {
-    font-size: 0.9rem;
-}
+.page-contactos .contact-item-label-strong {font-size: 0.9rem;}
 
 .page-contactos .contact-item-label {
     color: var(--color-text);
@@ -3508,7 +3242,6 @@ body.accessibility-contrast
 ============================================
 ========================================= */
 
-
 /* =========================================
    HERO DE PÁGINAS PRINCIPALES
    Trámites / Municipalidad / Noticias / Contactos
@@ -3554,8 +3287,7 @@ body.accessibility-contrast
 
 .tramites-directory-grid {
     display: grid;
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -3580,8 +3312,7 @@ body.accessibility-contrast
 
 .tramites-directory-card:hover {
     transform: translateY(-5px);
-    box-shadow:
-        0 10px 28px rgba(23, 49, 82, 0.14);
+    box-shadow: 0 10px 28px rgba(23, 49, 82, 0.14);
 }
 
 /* Número decorativo */
@@ -3707,7 +3438,6 @@ body.accessibility-contrast
 
 }
 
-
 /* =========================================
 ============================================
 ============================================
@@ -3744,9 +3474,7 @@ body.accessibility-contrast
 }
 
 .documentos-permisos-page
-.service-subpage-hero-eyebrow {
-    background-color: var(--documentos-accent-dark);
-}
+.service-subpage-hero-eyebrow {background-color: var(--documentos-accent-dark);}
 
 .documentos-permisos-page
 .section-kicker,
@@ -3796,8 +3524,7 @@ body.accessibility-contrast
 
 .documentos-category-grid {
     display: grid;
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -3893,8 +3620,7 @@ body.accessibility-contrast
 
 .documentos-process-grid {
     display: grid;
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -3945,8 +3671,7 @@ body.accessibility-contrast
 
 .documentos-actions-grid {
     display: grid;
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 32px;
 }
 
@@ -3989,7 +3714,6 @@ body.accessibility-contrast
     .documentos-section-heading h2 {font-size: 1.8rem;}
     .documentos-action-block {padding: 26px;}
 }
-
 
 /* =========================================
 ============================================
@@ -4168,8 +3892,7 @@ body.accessibility-contrast
 
 .concurso-card:hover {
     transform: translateY(-2px);
-    box-shadow:
-        0 8px 22px rgba(23, 49, 82, 0.11);
+    box-shadow: 0 8px 22px rgba(23, 49, 82, 0.11);
 }
 
 /* =========================================
@@ -4321,8 +4044,7 @@ body.accessibility-contrast
 
 .concursos-process-grid {
     display: grid;
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -4449,7 +4171,6 @@ body.accessibility-contrast
     .concurso-meta {gap: 18px;}
 
 }
-
 
 /* =========================================
 ============================================
@@ -5328,8 +5049,7 @@ body.portal-pagos-page.accessibility-contrast
     border: none;
     border-top: 6px solid var(--payment-yellow);
     border-radius: 12px;
-    box-shadow:
-        0 14px 32px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
 }
 
 /* =========================================
@@ -5747,7 +5467,6 @@ a.municipal-org-node:hover {
 }
 
 .municipal-org-directory-link:hover {color: var(--color-red);}
-
 
 .municipal-org-directions-grid {
     display: grid;
@@ -6763,24 +6482,11 @@ a.municipal-org-node:hover {
     }
 
     .municipalidad-offices-header .btn {width: 100%;}
-
     .municipalidad-participation {grid-template-columns: 1fr;}
-
-    .municipalidad-history-feature-copy {
-        padding: 24px 22px 18px;
-    }
-
-    .municipalidad-history-gallery {
-        padding: 0 16px 18px;
-    }
-
-    .municipalidad-map-shell {
-        margin: 0 16px;
-    }
-
-    .municipalidad-map-frame {
-        min-height: 300px;
-    }
+    .municipalidad-history-feature-copy {padding: 24px 22px 18px;}
+    .municipalidad-history-gallery {padding: 0 16px 18px;}
+    .municipalidad-map-shell {margin: 0 16px;}
+    .municipalidad-map-frame {min-height: 300px;}
 
     .municipalidad-map-meta {
         padding: 16px;
@@ -6831,9 +6537,7 @@ a.municipal-org-node:hover {
     .municipal-office-pulse {animation: none;}
 
     .municipalidad-history-image,
-    .municipalidad-history-progress-bar {
-        transition: none;
-    }
+    .municipalidad-history-progress-bar {transition: none;}
 }
 
 /* =========================================
@@ -6992,9 +6696,7 @@ body.accessibility-contrast
 .municipalidad-map-meta strong,
 
 body.accessibility-contrast
-.municipalidad-history-gallery-status {
-    color: #ffffff !important;
-}
+.municipalidad-history-gallery-status {color: #ffffff !important;}
 
 body.accessibility-contrast
 .municipalidad-history-gallery-btn {
@@ -7004,19 +6706,13 @@ body.accessibility-contrast
 }
 
 body.accessibility-contrast
-.municipalidad-history-progress {
-    background-color: #ffffff !important;
-}
+.municipalidad-history-progress {background-color: #ffffff !important;}
 
 body.accessibility-contrast
-.municipalidad-history-progress-bar {
-    background-color: #ffeb3b !important;
-}
+.municipalidad-history-progress-bar {background-color: #ffeb3b !important;}
 
 body.accessibility-contrast
-.municipalidad-map-shell {
-    border: 2px solid #ffffff !important;
-}
+.municipalidad-map-shell {border: 2px solid #ffffff !important;}
 
 /* =========================================
 ============================================
@@ -7028,7 +6724,6 @@ body.accessibility-contrast
 ============================================
 ============================================
 ========================================= */
-
 
 /* =========================================
    IDENTIDAD
@@ -7661,8 +7356,7 @@ body.accessibility-contrast
     align-items: center;
     justify-content: center;
     gap: 4px;
-    background-color:
-        var(--concejo-soft);
+    background-color: var(--concejo-soft);
     text-align: center;
 }
 
@@ -7718,8 +7412,7 @@ body.accessibility-contrast
 
 .concejo-members-grid {
     display: grid;
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -8162,13 +7855,9 @@ body.accessibility-contrast
 ========================================= */
 
 /* Identidad visual de las subpáginas */
-.agenda-page .site-header {
-    border-bottom: 4px solid var(--color-accent);
-}
+.agenda-page .site-header {border-bottom: 4px solid var(--color-accent);}
 
-.comunicados-page .site-header {
-    border-bottom: 4px solid var(--color-red);
-}
+.comunicados-page .site-header {border-bottom: 4px solid var(--color-red);}
 
 .news-subpage-section {
     padding-top: 32px;
@@ -8180,25 +7869,14 @@ body.accessibility-contrast
     margin-bottom: 32px;
 }
 
-.news-subpage-heading .section-desc {
-    margin-bottom: 0;
-}
+.news-subpage-heading .section-desc {margin-bottom: 0;}
 
 /* =========================================
    NOTICIAS · RESUMEN
 ========================================= */
-.news-all-title {
-    margin-bottom: 24px;
-}
-
-
-.news-overview-section {
-    padding-top: 48px;
-}
-
-.news-overview-header {
-    margin-bottom: 28px;
-}
+.news-all-title {margin-bottom: 24px;}
+.news-overview-section {padding-top: 48px;}
+.news-overview-header {margin-bottom: 28px;}
 
 .news-overview-grid {
     display: grid;
@@ -8218,13 +7896,8 @@ body.accessibility-contrast
     box-shadow: var(--shadow-sm);
 }
 
-.news-overview-card-agenda {
-    border-top: 4px solid var(--color-accent);
-}
-
-.news-overview-card-comunicados {
-    border-top: 4px solid var(--color-red);
-}
+.news-overview-card-agenda {border-top: 4px solid var(--color-accent);}
+.news-overview-card-comunicados {border-top: 4px solid var(--color-red);}
 
 .news-overview-card h3 {
     margin-bottom: 18px;
@@ -8394,9 +8067,7 @@ body.accessibility-contrast
     font-size: 0.78rem;
 }
 
-.agenda-event-meta strong {
-    color: var(--color-primary);
-}
+.agenda-event-meta strong {color: var(--color-primary);}
 
 /* =========================================
    COMUNICADOS
@@ -8454,13 +8125,8 @@ body.accessibility-contrast
     gap: 24px;
 }
 
-.comunicado-card .news-excerpt-small {
-    flex-grow: 1;
-}
-
-.news-kicker-red {
-    color: var(--color-red);
-}
+.comunicado-card .news-excerpt-small {flex-grow: 1;}
+.news-kicker-red {color: var(--color-red);}
 
 /* =========================================
    RESPONSIVE - HERO INTERNO + NOTICIAS
@@ -8548,16 +8214,12 @@ body.accessibility-contrast .news-overview-preview {
 
 body.accessibility-contrast .agenda-event-content p,
 body.accessibility-contrast .news-overview-preview p,
-body.accessibility-contrast .comunicado-featured-content p {
-    color: #ffffff !important;
-}
+body.accessibility-contrast .comunicado-featured-content p {color: #ffffff !important;}
 
 body.accessibility-contrast .agenda-event-meta strong,
 body.accessibility-contrast .agenda-event-kicker,
 body.accessibility-contrast .news-overview-card .section-kicker-accent,
-body.accessibility-contrast .news-overview-card .section-kicker-red {
-    color: #ffeb3b !important;
-}
+body.accessibility-contrast .news-overview-card .section-kicker-red {color: #ffeb3b !important;}
 
 /* =========================================
    BARRA SUPERIOR RESPONSIVE
@@ -8791,7 +8453,6 @@ body.accessibility-contrast .news-overview-card .section-kicker-red {
         padding: 11px 16px;
     }
 
-
     /* =========================================
        HERO
     ========================================= */
@@ -9022,7 +8683,7 @@ body.accessibility-contrast .news-overview-card .section-kicker-red {
     .header-right.is-open {display: flex;}
 
     .responsive-nav-page
-    .main-nav { width: 100%;}
+    .main-nav {width: 100%;}
 
     .responsive-nav-page
     .main-nav > ul {
@@ -9193,18 +8854,14 @@ body.accessibility-contrast .news-overview-card .section-kicker-red {
        PORTAL DE PAGOS
     ========================================= */
 
-    .service-subpage-hero {
-        padding: 48px 0;
-    }
+    .service-subpage-hero {padding: 48px 0;}
 
     .service-subpage-hero h1 {
         font-size: 2rem;
         line-height: 1.15;
     }
 
-    .service-subpage-hero-tags {
-        gap: 8px 18px;
-    }
+    .service-subpage-hero-tags {gap: 8px 18px;}
 
     .service-subpage-hero-panel {
         width: 100%;
